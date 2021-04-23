@@ -1,0 +1,52 @@
+/**index.wxss**/
+.page-body {
+  background-color: #ff2020;
+  padding: 100rpx;
+  color: #000;
+}
+
+.selected-date {
+  text-align: center;
+  height: 200rpx;
+  line-height: 200rpx;
+  width: 100%;
+}
+
+.picker-view {
+  width: 100%;
+  height: 600rpx;
+  text-align: center;
+  background-color: #ff2020;
+}
+
+.picker-indicator {
+  height: 80rpx;
+  background-color: #B9EFE7;
+  z-index: 0;
+}
+
+.picker-view .picker-column:first-child .picker-indicator {
+  border-radius: 16rpx 0 0 16rpx;
+}
+
+.picker-view .picker-column:last-child .picker-indicator {
+  border-radius: 0 16rpx 16rpx 0;
+}
+
+.picker-mask {
+  background-image: linear-gradient(#ff2020,rgba(255, 255, 255, 0)),linear-gradient(rgba(255, 255, 255, 0),#ff2020);
+}
+
+
+.picker-item {
+  width: 100%;
+  line-height: 80rpx;
+  text-align: center;
+}
+
+.picker-item.pick-text {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #22c2bb;
+  overflow: hidden;
+}

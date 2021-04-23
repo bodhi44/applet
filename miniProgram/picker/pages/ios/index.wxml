@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="page-body">
+    <view class="selected-date">{{year}}年{{month}}月{{day}}日</view>
+    <picker-view class="picker-view" indicator-class="picker-indicator" mask-class="picker-mask" value="{{value}}" bindchange="bindChange">
+      <picker-view-column class="picker-column">
+          <view wx:for="{{years}}" wx:key="{{years}}" wx:key="index" class="picker-item {{ value[0] === index ? 'pick-text' : '' }}">{{item}}年</view>
+      </picker-view-column>
+      <picker-view-column class="picker-column">
+        <view wx:for="{{months}}" wx:key="{{months}}" wx:key="index" class="picker-item {{ value[1] === index ? 'pick-text' : '' }}">{{item}}月</view>
+      </picker-view-column>
+      <picker-view-column class="picker-column">
+        <view wx:for="{{days}}" wx:key="{{days}}" wx:key="index" class="picker-item {{ value[2] === index ? 'pick-text' : '' }}">{{item}}日</view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>

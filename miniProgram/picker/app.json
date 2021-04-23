@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/ios/index",
+    "pages/index/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "picker",
+    "navigationBarTextStyle":"white"
+  },
+  "sitemapLocation": "sitemap.json"
+}
